@@ -32,7 +32,7 @@ function isSearched(searchTerm) {
 
 
 
-function Search({value, onChange, children}) {
+function SearchTwo({value, onChange, children}) {
   return (
     <form>
       {children} < input
@@ -43,6 +43,15 @@ function Search({value, onChange, children}) {
     </form>
   );
 }
+
+const Search = ({ value, onChange, children }) => 
+<form> 
+  {children} <input 
+    type="text"
+    value={value}
+    onChange={onChange}
+  />
+</form>
 
 
 function Button(props){
